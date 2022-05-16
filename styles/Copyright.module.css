@@ -1,0 +1,13 @@
+.copyright {
+    background-color: #1b1e2a;
+    padding: 1em 0;
+    text-transform: uppercase;
+}
+
+.copyright p {
+    color: white;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+    font-size: x-small;
+    text-align: center;
+}

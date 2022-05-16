@@ -1,0 +1,75 @@
+.talk {
+  background-color: #1b1e2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 20vh 0;
+}
+
+.talkTag {
+  letter-spacing: 0.2em;
+  font-size: x-large;
+  font-weight: 400;
+  margin-bottom: 1.25em;
+  color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.talkLink {
+  /* margin-top: 0.5em; */
+  padding: 1rem 4rem;
+  background-color: white;
+  color: #1b1e2a;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: medium;
+  border-radius: 15px;
+  width: fit-content;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  animation: projectHoverOut 0.5s forwards ease-out;
+}
+
+.talkLink h5 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.talkLink:hover {
+  animation: projectHover 0.5s forwards ease-out;
+}
+
+@keyframes projectHover {
+  from {
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);
+    scale: 1;
+  }
+  to {
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.35);
+    scale: 1.05;
+  }
+}
+@keyframes projectHoverOut {
+  from {
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.35);
+    scale: 1.05;
+  }
+  to {
+    scale: 1;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .talk{
+    padding: 30vh 0;
+  }
+}

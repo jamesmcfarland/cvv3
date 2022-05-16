@@ -1,0 +1,20 @@
+.introTitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.normalP {
+  font-weight: 400;
+  font-size: large;
+}
+
+.about {
+  padding-top: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .normalP {
+    font-size: medium;
+  }
+}

@@ -1,0 +1,28 @@
+.landingGrid {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  animation: bg 1s forwards linear;
+}
+
+@keyframes bg {
+  from {
+    background-color: #141414;
+  }
+  to {
+    background-color: #1b1e2a;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landingGrid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(4, 1fr) 3fr repeat(4, 1fr) !important;
+
+    
+  }
+}

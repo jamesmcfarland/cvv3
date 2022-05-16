@@ -1,0 +1,109 @@
+.projectsGridContainer {
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  column-gap: 4em;
+  row-gap: 2em;
+  align-items: baseline;
+  justify-content: start;
+}
+
+.viewProject {
+  /* margin-top: 0.5em; */
+  padding: 0.75rem 3rem;
+  background-color: #1b1e2a;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: small;
+  border-radius: 15px;
+  width: fit-content;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  animation: projectHoverOut 0.5s forwards ease-out;
+}
+
+.viewProject h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.viewProject:hover {
+  animation: projectHover 0.5s forwards ease-out;
+}
+.viewGithub {
+  /* margin-top: 0.5em; */
+  padding: 1rem 4rem;
+  background-color: #1b1e2a;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: medium;
+  border-radius: 15px;
+  width: fit-content;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  animation: projectHoverOut 0.5s forwards ease-out;
+}
+
+.viewGithub h5 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.viewGithub:hover {
+  animation: projectHover 0.5s forwards ease-out;
+}
+
+.gitHub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 20vh 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.gitHubTag {
+  letter-spacing: 0.2em;
+  font-size: x-large;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+
+@keyframes projectHover {
+  from {
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);
+    scale: 1;
+  }
+  to {
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.35);
+    scale: 1.05;
+  }
+}
+@keyframes projectHoverOut {
+  from {
+    box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.35);
+    scale: 1.05;
+  }
+  to {
+    scale: 1;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectsGridContainer {
+    display: block;
+  }
+  .viewProject{
+    margin-bottom: 4em;
+  }
+
+ 
+}

@@ -1,0 +1,32 @@
+.skillSet {
+  padding: 2em 0;
+}
+
+.skillSetTitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  column-gap: 4em;
+  align-items: baseline;
+  justify-content: start;
+}
+.skillTitle {
+  font-size: larger;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.skillInfo {
+  font-weight: 400;
+  font-size: medium;
+}
+@media only screen and (max-width: 600px) {
+  .gridContainer {
+    display: block;
+  }
+}
