@@ -1,6 +1,6 @@
 .skillSet {
   padding: 2em 0;
-  text-overflow: ellipsis;
+  
 }
 
 .skillSetTitle {
@@ -16,7 +16,7 @@
   align-items: baseline;
   justify-content: start;
   /* width: 100%; */
-  overflow: initial;
+  animation: safariOverflowFix 0.1s forwards;
 }
 .skillTitle {
   font-size: larger;
@@ -32,4 +32,14 @@
   .gridContainer {
     display: block;
   }
+}
+
+@keyframes safariOverflowFix {
+  from {
+    overflow: visible;
+  }
+  to {
+    overflow: auto;
+  }
+  
 }
