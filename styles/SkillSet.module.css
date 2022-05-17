@@ -15,7 +15,7 @@
   column-gap: 4em;
   align-items: baseline;
   justify-content: start;
-  width: 100%;
+  /* width: 100%; */
 }
 .skillTitle {
   font-size: larger;
