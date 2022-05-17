@@ -12,9 +12,9 @@ const SkillSet = ({ title, skills }) => {
             <h3 key={uuidv4()} className={styles.skillTitle}>
               {skill.title}
             </h3>,
-            <h3 key={uuidv4()} className={styles.skillInfo}>
+            <p key={uuidv4()} className={styles.skillInfo}>
               {skill.detail}
-            </h3>,
+            </p>,
           ]
         )}
       </div>
