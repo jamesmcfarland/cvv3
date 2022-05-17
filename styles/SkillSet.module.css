@@ -36,10 +36,10 @@
 
 @keyframes safariOverflowFix {
   from {
-    overflow: visible;
+    width: 90%;
   }
   to {
-    overflow: auto;
+    overflow: 100%;
   }
   
 }
