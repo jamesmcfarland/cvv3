@@ -1,6 +1,5 @@
 .skillSet {
   padding: 2em 0;
-  
 }
 
 .skillSetTitle {
@@ -27,7 +26,7 @@
   font-weight: 400;
   font-size: medium;
   max-width: 90vw;
-  animation: safariOverflowFix 0.1s forwards;
+  animation: safariOverflowFix 1s forwards;
 }
 @media only screen and (max-width: 600px) {
   .gridContainer {
@@ -46,5 +45,4 @@
   to {
     max-width: 90vw;
   }
-  
 }
