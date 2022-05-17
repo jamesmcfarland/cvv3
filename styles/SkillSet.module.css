@@ -16,7 +16,6 @@
   align-items: baseline;
   justify-content: start;
   /* width: 100%; */
-  animation: safariOverflowFix 0.1s forwards;
 }
 .skillTitle {
   font-size: larger;
@@ -28,6 +27,7 @@
   font-weight: 400;
   font-size: medium;
   max-width: 90vw;
+  animation: safariOverflowFix 0.1s forwards;
 }
 @media only screen and (max-width: 600px) {
   .gridContainer {
@@ -35,15 +35,16 @@
   }
   .skillInfo {
     max-width: unset;
+    animation: none;
   }
 }
 
 @keyframes safariOverflowFix {
   from {
-    width: 90%;
+    max-width: 1vw;
   }
   to {
-    overflow: 100%;
+    max-width: 90vw;
   }
   
 }
