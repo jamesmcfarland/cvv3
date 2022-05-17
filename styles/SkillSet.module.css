@@ -1,5 +1,6 @@
 .skillSet {
   padding: 2em 0;
+  text-overflow: ellipsis;
 }
 
 .skillSetTitle {
@@ -14,6 +15,7 @@
   column-gap: 4em;
   align-items: baseline;
   justify-content: start;
+  width: 100%;
 }
 .skillTitle {
   font-size: larger;
