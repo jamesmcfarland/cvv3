@@ -16,6 +16,7 @@
   align-items: baseline;
   justify-content: start;
   /* width: 100%; */
+  overflow: auto;
 }
 .skillTitle {
   font-size: larger;
@@ -26,6 +27,7 @@
 .skillInfo {
   font-weight: 400;
   font-size: medium;
+  overflow: auto;
 }
 @media only screen and (max-width: 600px) {
   .gridContainer {
