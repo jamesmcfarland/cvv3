@@ -4,6 +4,7 @@ import styles from "../../styles/LandingMain.module.css";
 const LandingMain = () => {
   return (
     <div className={styles.gridItem}>
+      <video src="/landing.mp4" autoPlay muted loop className={styles.landingVideo}></video>
       <div className={styles.container}>
         <h1 className={styles.title}>james mcfarland</h1>
         <div className={styles.buttonContainer}>

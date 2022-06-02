@@ -7,6 +7,7 @@ import { mapIndex } from "../../helpers/math";
 const Landing = ({ maxFadeInDelay }) => {
   return (
     <div className={styles.landingGrid}>
+      <LandingMain />
       {/* primary elements */}
       {attributes.map(({ text, isPrimary, styleClass }, i) => {
         return (
@@ -20,7 +21,6 @@ const Landing = ({ maxFadeInDelay }) => {
         );
       })}
 
-      <LandingMain />
     </div>
   );
 };
