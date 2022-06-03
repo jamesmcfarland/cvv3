@@ -1,10 +1,11 @@
 import Link from "next/link";
 import styles from "../../styles/LandingMain.module.css";
+import AutoplayVideo from "../utility/AutoplayVideo";
 
 const LandingMain = () => {
   return (
     <div className={styles.gridItem}>
-      <video src="/landing.mp4" autoPlay muted loop className={styles.landingVideo}></video>
+      <AutoplayVideo src="./landing.mp4" stylePassthrough={styles.landingVideo} />
       <div className={styles.container}>
         <h1 className={styles.title}>james mcfarland</h1>
         <div className={styles.buttonContainer}>
