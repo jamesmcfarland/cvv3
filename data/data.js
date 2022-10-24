@@ -1,4 +1,7 @@
 import * as attributeStyles from "../styles/Attributes.module.css";
+import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaCloudflare, FaDiscord, FaReact } from "react-icons/fa";
+import {  SiCsharp, SiGooglesheets, SiMinecraft, SiPm2 } from "react-icons/si";
+import {  TbBrandNextjs } from "react-icons/tb";
 
 export const attributes = [
   {
@@ -17,7 +20,7 @@ export const attributes = [
     styleClass: attributeStyles.gridSecurity,
   },
   {
-    text: "events team @ qcs",
+    text: "secretary @ qcs",
     isPrimary: true,
     styleClass: attributeStyles.gridQCS,
   },
@@ -48,21 +51,25 @@ export const techskills = [
     title: "C#/.NET",
     detail:
       "Experience at GCSE & A-Level, mainly building desktop apps with WPF. Some experience with using the new .NET Core platform in production projects for QCS",
+      icon: SiCsharp
   },
   {
     title: "HTML/CSS",
     detail:
       "Self taught alongside learning React, however this was also studied during Semester 2 of Level 1 of my SE degree. See the QCS website, events page and this site for some of my work",
+      icon: FaHtml5
   },
   {
     title: "javascript",
     detail:
       "Self taught alongside learning React, however this was also studied during Semester 2 of Level 1 of my SE degree. See the QCS Discord bot, new QCS Fixr member scraper and this very site for my work!",
+      icon: FaJs
   },
   {
     title: "react",
     detail:
       "Entirely self-taught in my own time, see my schedule project on GitHub, the QCS Events site (this used Next.js) and this site.",
+      icon:FaReact
   },
 ];
 export const softskills = [
@@ -91,7 +98,7 @@ export const volunteering = [
   {
     title: "QCS Committee",
     detail:
-      "Joining in November 2021, I've immersed myself in the society and the team, working on projects such as our Minecraft Server, which helped bring student together during a University lockdown, and our hugely successful 2022 EEECS Formal, from which we raised £5400 for Pure Mental NI!",
+      "Joining in November 2021, I've immersed myself in the society and the team, working on projects such as our Minecraft Server, which helped bring student together during a University lockdown, and our hugely successful 2022 EEECS Formal, from which we raised £5400 for Pure Mental NI! As of August 2023, I also sit on the Executive Committee as Secretary, managing emails, meetings and overall back-of-house running of the committee.",
   },
   {
     title: "scouts",
@@ -103,13 +110,29 @@ export const projects = [
   {
     title: "QCS Website",
     detail:
-      "This involved working with multiple members of the QCS committee in order to first determine requirements, then propose designs, and finally implement and deploy the end product. In its current state (May 2022), the site currently utilises vanilla HTML, CSS and JS, and is deployed with GitHub pages and Cloudflare. ",
+      "This involved working with multiple members of the QCS committee in order to first determine requirements, then propose designs, and finally implement and deploy the end product. In its current state (May 2022), the site currently utilises vanilla HTML, CSS and JS, and is deployed with Netlify and Cloudflare. I also was able to integrate with our ticketing platform to show current and upcoming events on a custom page, driving ticket sales and engagement. Cloudflare is also used to redirect URLs using Page Rules and secure the site.",
     link: "https://queenscomputingsociety.com",
+    icons: [FaHtml5, FaCss3, FaJs, FaCloudflare],
+    status: "complete"
   },
   {
-    title: "QCS Events",
+    title: "QCS Member management",
     detail:
-      "Whilst not currently officially deployed as a part of QCS's technical solutions, this site was built to be a simple one-stop-shop for all of the societies upcoming events, providing information and links to purchase tickets. This was built using Next.js for the frontend, and Contentful as the Content Management System (CMS). It is deployed on Vercel and makes use of Webhooks in order to rebuild and redeploy the site whenever changes are made on either GitHub or Contentful. ",
-    link: "https://events.queenscomputingsociety.com",
+      "A society such as QCS has many unique requirements, one of which is an efficient way to manage our 250+ strong member information. I built and maintain a custom solution to pull our data down from our ticketing provider, transform it and publish it to a Google Sheet, accessible by all of our team as and when needed. This helps us when quickly trying to track down people, gaining insights into trends and demographics within our membership, and when coordinating with the Students Union",
+    link: "https://github.com/queenscomputingsociety/qcs-fixr-scraper",
+    icons:[FaNodeJs, SiGooglesheets, SiPm2]
   },
+  {
+    title: "QCS Verification & Minecraft integration",
+    detail:
+      "Using Discord's Bot API, I built a custom Bot which our members can interact with on our 1000+ member server, allowing them to verify their membership and gain access to exclusive channels. Additionally, for our Minecraft server, we needed a way to whitelist members based on data they provided at signup, so I was able to build a system that achieves this with zero management needed.",
+    link: "https://github.com/queenscomputingsociety",
+    icons:[FaNodeJs, FaDiscord, SiPm2, SiMinecraft],
+  },
+  {
+    title:"This website",
+    detail: "Built using Next.JS, following industry practice and deployed onto vercel, it is configured with a CD pipeline to deploy on each commit to the appropriate branch. Secured by Cloudflare Page Rules.",
+    link:"https://github.com/jamesmcfarland/cvv3",
+    icons:[TbBrandNextjs, FaHtml5, FaCss3, FaJs, FaCloudflare]
+  }
 ];

@@ -8,6 +8,11 @@
   padding-bottom: 0.5em;
 }
 
+.skillSetTitle svg {
+  margin-right: 0.25em;
+  color: rgb(39, 163, 147);
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 2fr 7fr;
@@ -16,6 +21,13 @@
   justify-content: start;
   /* width: 100%; */
 }
+
+.gridContainer svg {
+  margin-right: 0.25em;
+  color: rgb(39, 163, 147);
+  font-size: large;
+}
+
 .skillTitle {
   font-size: larger;
   text-transform: capitalize;

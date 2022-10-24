@@ -4,6 +4,10 @@
   padding-bottom: 0.5em;
 }
 
+.introTitle svg {
+  color: rgb(39, 163, 147);
+}
+
 .normalP {
   font-weight: 400;
   font-size: large;

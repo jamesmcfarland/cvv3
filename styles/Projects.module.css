@@ -76,6 +76,16 @@
   margin-bottom: 1.25em;
 }
 
+
+.techUsed{
+  color: rgb(39, 163, 147);
+  font-size: x-large;
+}
+
+.techUsed svg {
+  margin: 0 0.25em 0 0;
+}
+
 @keyframes projectHover {
   from {
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);

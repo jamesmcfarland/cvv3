@@ -12,9 +12,15 @@ const Projects = () => {
         {projects.map((project, i) =>
           //   <div className={styles.skill} key={skill.title}>
           [
-            <h3 key={uuidv4()} className={skillSetStyles.skillTitle}>
-              {project.title}
-            </h3>,
+            <div key={uuidv4()}>
+              <h3 className={skillSetStyles.skillTitle}>
+                {project.title}
+              </h3>
+         
+              <div className={styles.techUsed}>{project.icons.map((Icon, j) => (<Icon key={j} />))}</div>
+             
+            </div>
+            ,
             <div key={uuidv4()}>
               <h3 className={skillSetStyles.skillInfo}>{project.detail}</h3>
               <Link href={project.link} rel="noreferrer">
