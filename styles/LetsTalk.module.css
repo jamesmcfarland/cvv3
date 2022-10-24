@@ -5,6 +5,11 @@
   justify-content: center;
   text-transform: uppercase;
   padding: 20vh 0;
+
+  background-color: #1b1e2a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2325293a' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23383e56' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23242838' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%233e455f' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23232736' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23444b69' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23212535' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%234a5273' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23202433' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2351597d' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%231f2331' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23576087' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .talkTag {
@@ -66,10 +71,8 @@
   }
 }
 
-
 @media only screen and (max-width: 600px) {
-
-  .talk{
+  .talk {
     padding: 30vh 0;
   }
 }
