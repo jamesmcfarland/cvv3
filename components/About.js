@@ -1,11 +1,12 @@
 import styles from "../styles/About.module.css";
-import {GiHand} from "react-icons/gi";
-
+import { GiHand } from "react-icons/gi";
+import { Fade } from "react-awesome-reveal";
 const About = () => {
   return (
     <div id="about" className={styles.about}>
-      <h2 className={styles.introTitle}><GiHand/> hi, nice to meet you,</h2>
+      <Fade direction="up" triggerOnce><h2 className={styles.introTitle}><GiHand /> hi, nice to meet you,</h2></Fade>
       <p className={styles.normalP}>
+
         My name&apos;s James, and I&apos;m a 2nd Year Software Engineer at
         Queen&apos;s University Belfast. <br /> <br />
         I am the 2022/23 Secretary of the Queen&apos;s Computing Society committee,
@@ -25,6 +26,7 @@ const About = () => {
         however, my strongest language is C#, particularly within the .NET
         framework. JavaScript is quickly taking over however, Node.JS is just
         too versatile!
+
       </p>
     </div>
   );

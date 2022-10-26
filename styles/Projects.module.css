@@ -86,6 +86,10 @@
   margin: 0 0.25em 0 0;
 }
 
+.techUsed div {
+  display: inline !important;
+}
+
 @keyframes projectHover {
   from {
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);
