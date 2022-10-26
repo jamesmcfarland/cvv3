@@ -131,7 +131,7 @@ export const projects = [
   },
   {
     title:"This website",
-    detail: "Built using Next.JS, following industry practice and deployed onto vercel, it is configured with a CD pipeline to deploy on each commit to the appropriate branch. Secured by Cloudflare Page Rules.",
+    detail: "Built using Next.JS, following industry best practice and deployed onto vercel, it is configured with a CD pipeline to deploy on each commit to the appropriate branch. Secured by Cloudflare Page Rules.",
     link:"https://github.com/jamesmcfarland/cvv3",
     icons:[TbBrandNextjs, FaHtml5, FaCss3, FaJs, FaCloudflare]
   }
