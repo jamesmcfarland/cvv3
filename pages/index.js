@@ -9,6 +9,9 @@ export default function Home() {
     <>
       <Head>
         <title>James McFarland</title>
+        
+
+
       </Head>
       <Landing maxFadeInDelay={2} />
       <MainContent />
